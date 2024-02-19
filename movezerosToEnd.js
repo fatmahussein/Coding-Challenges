@@ -5,13 +5,11 @@ function moveZerosToEnd(arr) {
     let ZeroIndex = 0;
  
      for (let i = 0; i < arr.length; i++) {
-         // console.log(arr[i]);
-         if(arr[i] !== 0) {
+            if(arr[i] !== 0) {
             [arr[i], arr[ZeroIndex]] = [arr[ZeroIndex], arr[i]];
              ZeroIndex++;
          }
-        //  console.log(arr[ZeroIndex]);
- 
+       
      }
      return arr;
  } 
